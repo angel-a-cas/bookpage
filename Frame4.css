@@ -1,44 +1,44 @@
 body {
     margin: 0;
-    background-color: #f4bf8d; /* Peach */
+    background-color: #f4bf8d;
     font-family: 'Georgia', serif;
-  }
-  
-  .container {
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px;
-  }
-  
-  .main-frame {
-    background-color: #4a8c95; /* Teal */
+}
+
+.main-frame {
+    background-color: #4a8c95;
     width: 90%;
     min-height: 80vh;
     padding: 40px;
     position: relative;
     color: white;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 3em;
     margin-bottom: 40px;
     color: white;
-  }
-  
-  .cards {
+}
+
+.cards {
     display: flex;
     gap: 30px;
-  }
-  
-  .card {
-    background-color: #f49891; /* Pink footer */
+}
+
+.card {
+    background-color: #f49891;
     width: 200px;
     display: flex;
     flex-direction: column;
-  }
-  
-  .card-image {
+}
+
+.card-image {
   background-color: black;
   height: 200px;
   display: flex;
@@ -53,40 +53,37 @@ body {
   object-fit: contain;
 }
 
-/* Ensure the card itself changes on hover */
 .card-link .card {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .card-link:hover .card {
-  background-color: #e57871; /* Match nav-button hover color */
+  background-color: #e57871;
   transform: translateY(-2px);
   cursor: pointer;
 }
 
-  
-  .image-icon {
+.image-icon {
     width: 40px;
     height: 40px;
-    background-color: #f49891; /* Matches footer */
+    background-color: #f49891;
     border-radius: 6px;
-  }
-  
-  .card-footer {
+}
+
+.card-footer {
     padding: 15px;
     color: black;
     font-size: 0.9em;
-  }
-  
-  .card-footer a {
+}
+
+.card-footer a {
     display: inline-block;
     margin-top: 10px;
     text-decoration: none;
     color: black;
     font-size: 0.85em;
-  }
-  
-/* Top navigation bar */
+}
+
 .top-nav {
   position: absolute;
   top: 20px;
@@ -96,7 +93,6 @@ body {
   z-index: 1000;
 }
 
-/* Top nav buttons */
 .nav-button {
   background-color: #f49891;
   color: white;
@@ -119,45 +115,28 @@ body {
   font-family: 'Ribeye', Georgia, serif;
 }
 
-p, li, ol{
-    color:black;
+p, li, ol {
+    color: black;
 }
 
+/* Responsive Pink Box */
+.pink-box {
+  background-color: #f49891;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: black;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  word-wrap: break-word;
+}
 
-/* Responsive tweaks */
 @media (max-width: 768px) {
-  .main-frame, .main-box, .content-boxes, .cards {
-    flex-direction: column !important;
-    width: 100% !important;
-  }
-
-  .top-nav {
-    flex-direction: column;
-    align-items: flex-end;
-    right: 20px;
-    gap: 10px;
-  }
-
-  .nav-button {
-    margin-bottom: 10px;
-  }
-
-  .main-box, .card, .box-title {
-    width: 100% !important;
-  }
-
-  .card img, .card-logo {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .resource-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .resource-button {
-    width: 90%;
-    text-align: center;
+  .pink-box {
+    padding: 16px;
+    font-size: 0.95rem;
+    line-height: 1.5;
   }
 }
